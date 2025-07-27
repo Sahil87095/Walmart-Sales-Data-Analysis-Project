@@ -25,46 +25,57 @@ Check for column names, data types, value distributions, and early insights.
 3. 🧹 Data Cleaning
 Key Cleaning Tasks:
 Remove Duplicates: Eliminate repeated records to ensure accuracy.
+
 Handle Missing Values:
 Drop rows or columns with insignificant missing data.
 Impute or fill values where necessary.
+
 Fix Data Types: Ensure consistency (e.g., dates → datetime, prices → float).
 Format Currency Fields: Use .replace() to clean and standardize price and revenue fields.
-Validation: Re-check the dataset post-cleaning to confirm no data quality issues remain.
 
-4. 🛠️ Feature Engineering
+
+5. 🛠️ Feature Engineering
 New Feature Created:
 Total Amount = unit_price × quantity
 Added as a new column for simplified analysis of transaction values.
+
 Purpose:
 Enables more insightful aggregation and revenue-related queries in SQL.
 
-5. 🗄️ Load Data into MySQL
+7. 🗄️ Load Data into MySQL
 Steps:
 Set Up SQL Connection: Use SQLAlchemy to connect to MySQL.
+
 Table Creation: Creation of necessary tables.
+
 Data Insertion: Insert the cleaned and enriched data into MySQL tables.
 
-6. 🧮 SQL Analysis: Complex Queries & Business Problem Solving
+9. 🧮 SQL Analysis: Complex Queries & Business Problem Solving
 Key Business Questions Addressed:
+
 📈 Revenue Trends:
 Track revenue across different branches and product categories.
+
 🏆 Best-Selling Categories:
 Identify top-performing product lines by quantity and revenue.
+
 🏙️ Sales Performance by Location:
 Analyze branch-wise sales trends by city and payment method.
+
 ⏰ Peak Sales Periods:
 Discover busiest hours and days using timestamps.
+
 💰 Profit Margin Analysis:
 Estimate profitability by branch and category based on price metrics.
 
-7. 📊 Results & Insights
-Key Takeaways:
+11. 📊 Results & Insights
 Sales Insights:
 Highlighted best-performing branches and product categories.
 Identified most commonly used payment methods.
+
 Profitability:
 Discovered the most profitable combinations of category and location.
+
 Customer Behavior:
 Noted popular shopping times and customer rating trends.
 Identified preferred payment types and their correlation with spending.
